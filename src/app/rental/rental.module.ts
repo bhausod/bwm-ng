@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'
 //import { ActivatedRoute } from '@angular/router';
 
 import { RentalListComponent } from './rental-list/rental-list.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
     imports:[
         CommonModule,
         RouterModule.forChild(routes),
+        HttpClientModule
        // ActivatedRoute
     ],
     providers:[RentalService]
